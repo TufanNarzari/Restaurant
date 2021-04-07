@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .menu
+    {
+        background-color:#fc6a20;
+        display:block;
+	    margin:0;
+	    padding: 10px;
+    }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+        text-align: right;
+    }
+    .menu ul li
+    {
+	    display: inline-block;
+	    color: white;
+	    font-size:1.3em;
+	 
+    }
+    .menu ul li>a 
+    {
+        color:#FFFF;
+        text-decoration: none;
+        padding:11px 15px;
+        font-family:Sans-serif,Verdana;
+    }
+    .contact
+    {
+        background-color:#002c5b;
+        color:#fff;
+        
+    }
+    .header
+    {
+     background-color: #eeeeee;
+    }
+    .nav
+    {
+        padding:10px 60px 10px 10px;
+    }
+ 
+   .bor1
+    {
+        padding:10px;
+       
+       
+    }
+    .bar2
+    {
+        padding:10px;
+       color:#fff;
+    }
+    .bor1:nth-child(3)
+    {
+        border-right:none;
+    }
+    a
+    {
+        background-color: transparent;
+        text-decoration: none;
+        color:#FFF;
+    }
+    
+
+.logo
+{
+    display:inline;
+    position:absolute;
+    top:0%;
+    left:5%;
+    padding:1% 1.5%;
+align-items: center;
+font-weight:800;
+background-color:#fff;
+}
+.par
+{
+    border-right:1px solid #fff;
+    padding: 5px;
+}
+
+.brand
+{
+    max-width:100%;
+height:auto;
+}
+
+span.bar
+{
+    
+    border-bottom:1px solid #ddd;
+    border-width:70px;
+    border-height:1px;
+}
+.menu_icon
+{
+display:none;
+align-items: right;
+}
+.dogglebar 
+{
+
+text-decoration: none;
+color:#FFF;
+font-size: 2em;
+display:none;
+text-align: right;
+      padding-right:20px;
+}
+
+
+@media /*only screen and*/ (max-width: 900px) {
+  .contact {
+    transition:2s;
+    display:none;
+   
+  }
+
+  .dogglebar 
+  {
+      display:block;
+      
+  }
+  #dogglebar1 
+  {
+      display:none;
+      
+  }
+ 
+  #menu
+  {
+     display:none;
+     padding:0 0 5% 0;
+     align-content: right;
+  }
+  .menu ul 
+  {
+    
+       margin:0 20px 0 0; 
+  }
+  .menu ul li 
+  {
+      display:block;
+      
+       
+  }
+.menu ul
+{
+    width:50%;
+}
+ 
+} 
+.dropbtn {
+  background-color: #fc6a20;
+  color: white;
+  padding: 5px;
+  font-size:1em;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+ 
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+    border-left:2px solid #fc6a20;
+    border-width:8px
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contact">
+        <ul class="nav justify-content-end txt-sm ">
+                <li class="nav-item bor1">Your Trusted 24 Hours Service Provider!<span class="par"></span></li>
+            <li class="nav-item bor1"><i class="glyphicon glyphicon-envelope"></i>support@mobirise.com<span class="par"></span></li>
+            <li class="nav-item bor1">83420036274</li>
+        </ul>
+        </div>
+        <div class="menu">
+           <span  id="dogglebar"><a class="dogglebar" style="text-decoration:none" href="#" onclick="openNav()">&#9776;</a></span>
+           <span  id="dogglebar1"><a class="dogglebar" style="text-decoration:none" href="javascript:void(0)" onclick="closeNav()">X</a></span>
+           
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                        <div class="dropdown">
+                                <button class="dropbtn">Page us</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                              </div>
+
+                </li>
+                <li ><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li ><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="logo" >
+            <img src="src/logo3.jpg" class="items-center" width="100%"/>
+            <!-- <div class="brand" width="80%">RepairAMP</div> -->
+        </div>
+    </div>
+
+<section class="page1">
+    <div class="page12">
+
+
+        <div class="con1">
+
+            <h2>WELLCOME TO REPAIR AGENCY</h2>
+            <h1>We are Professional <span>Repair</span> Service</h1>
+            <p>Lorem ipsum dolor sit amet consectetur molestie adipiscing elit. Praesent quam malesuada consectetur molestie finibus.</p>
+            
+            <div class="btn1">
+                <a href="#">our projects</a>
+                <a href="#">Contact us</a>
+
+            </div>
+        </div>>
+
+    </div>
+    </section>
+
+    <section>
+        <div class="con2">
+            <div>
+            <h4>WORKING WITH EXCELLENT</h3>
+            <h1>Repair Everything
+                <br>
+                That You Need</h1>
+        </div>
+    </section>
+
+   <script>
+       function openNav() {
+  document.getElementById("menu").style.display = "block";
+ 
+  document.getElementById("dogglebar").style.display= "none";
+  document.getElementById("dogglebar1").style.display= "block";
+
+
+}
+function closeNav() {
+    
+    document.getElementById("menu").style.display = "none";
+  document.getElementById("dogglebar").style.display= "block";
+  document.getElementById("dogglebar1").style.display= "none";
+    
+}
+    </script>
+   
+</body>
