@@ -1,9 +1,736 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<title>Hi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+    .menu
+    {
+        background-color:#fc6a20;
+        display:block;
+	    margin:0;
+	    padding: 10px;
+    }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+        text-align: right;
+    }
+    .menu ul li
+    {
+	    display: inline-block;
+	    color: white;
+	    font-size:1.3em;
+	 
+    }
+    .menu ul li>a 
+    {
+        color:#FFFF;
+        text-decoration: none;
+        padding:11px 15px;
+        font-family:Sans-serif,Verdana;
+    }
+    .contact
+    {
+        background-color:#002c5b;
+        color:#fff;
+        
+    }
+    .header
+    {
+     background-color: #eeeeee;
+    }
+    .nav
+    {
+        padding:10px 60px 10px 10px;
+    }
+ 
+   .bor1
+    {
+        padding:10px;
+       
+       
+    }
+    .bar2
+    {
+        padding:10px;
+       color:#fff;
+    }
+    .bor1:nth-child(3)
+    {
+        border-right:none;
+    }
+    a
+    {
+        background-color: transparent;
+        text-decoration: none;
+        color:#FFF;
+    }
+    
+
+.logo
+{
+    display:inline;
+    position:absolute;
+    top:0%;
+    left:5%;
+    padding:1% 1.5%;
+align-items: center;
+font-weight:800;
+background-color:#fff;
+}
+.par
+{
+    border-right:1px solid #fff;
+    padding: 5px;
+}
+
+.brand
+{
+    max-width:100%;
+height:auto;
+}
+
+span.bar
+{
+    
+    border-bottom:1px solid #ddd;
+    border-width:70px;
+    border-height:1px;
+}
+.menu_icon
+{
+display:none;
+align-items: right;
+}
+.dogglebar 
+{
+
+text-decoration: none;
+color:#FFF;
+font-size: 2em;
+display:none;
+text-align: right;
+      padding-right:20px;
+}
+
+
+@media /*only screen and*/ (max-width: 1024px) {
+  .contact {
+    transition:2s;
+    display:none;
+   
+  }
+  .con1
+  {
+      text-align: center;
+      font-size: 1rem;
+  }
+
+  .dogglebar 
+  {
+      display:block;
+      
+  }
+  #dogglebar1 
+  {
+      display:none;
+      
+  }
+ 
+  #menu
+  {
+     display:none;
+     padding:0 0 5% 0;
+     align-content: right;
+  }
+  .menu ul 
+  {
+    
+       margin:0 20px 0 0; 
+  }
+  .menu ul li 
+  {
+      display:block;
+      
+       
+  }
+.menu ul
+{
+    width:50%;
+}
+ 
+}
+.dropbtn {
+  background-color: #fc6a20;
+  color: white;
+  padding: 5px;
+  font-size:1em;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+ 
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+    border-left:2px solid #fc6a20;
+    border-width:8px;
+    color:#fc6a20;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+  </style>
 </head>
 <body>
-<p> welcome</p>
+    <div class="header">
+        <div class="contact">
+        <ul class="nav justify-content-end txt-sm ">
+                <li class="nav-item bor1">Your Trusted 24 Hours Service Provider!<span class="par"></span></li>
+            <li class="nav-item bor1"><i class="glyphicon glyphicon-envelope"></i>support@mobirise.com<span class="par"></span></li>
+            <li class="nav-item bor1">83420036274</li>
+        </ul>
+        </div>
+        <div class="menu">
+           <span  id="dogglebar"><a class="dogglebar" style="text-decoration:none" href="#" onclick="openNav()">&#9776;</a></span>
+           
+           
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                        <div class="dropdown">
+                                <button class="dropbtn">Page us</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                              </div>
+
+                </li>
+                <li ><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li ><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="menu2" id="menu2">
+                
+                <span  id="dogglebar1"><a class="dogglebar" style="text-decoration:none" href="javascript:void(0)" onclick="closeNav()">X</a></span>
+                
+                 <ul >
+                     <li><a href="#">Home</a></li>
+                     <li>
+                             <div class="dropdown">
+                                     <button class="dropbtn">Page us</button>
+                                     <div class="dropdown-content">
+                                       <a href="#">Link 1</a>
+                                       <a href="#">Link 2</a>
+                                       <a href="#">Link 3</a>
+                                     </div>
+                                   </div>
+     
+                     </li>
+                     <li ><a href="#">Service</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li ><a href="#">About us</a></li>
+                 </ul>
+             </div>
+        <div class="logo" >
+            <img src="src/logo3.jpg" class="items-center" width="100%"/>
+            <!-- <div class="brand" width="80%">RepairAMP</div> -->
+        </div>
+    </div>
+
+<section class="page1">
+    <div class="page12">
+
+
+        <div class="con1" >
+
+            <h2>WELLCOME TO REPAIR AGENCY</h2>
+            <h1>We are Professional <span>Repair</span> Service</h1>
+            <p>Lorem ipsum dolor sit amet consectetur molestie adipiscing elit. Praesent quam malesuada consectetur molestie finibus.</p>
+            
+            <div class="btn1">
+                <a href="#">our projects</a>
+                <a href="#">Contact us</a>
+
+            </div>
+        </div>>
+
+    </div>
+    </section>
+
+    <section>
+        <div class="con2">
+            <div class="s2">
+            <h4>WORKING WITH EXCELLENT</h4>
+            <h1>Repair Everything
+                <br>
+                That You Need</h1>
+              
+            </div>
+
+               
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4  p-2">
+                          
+
+                                <div class=" card card-wrapper" style="width: 18rem">
+                                        <img class="card-img-top align-items-center" src="src/02.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Complicated Repair</h5>
+                                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nisi a dui vehicula.</p>
+                                          <a href="#"class="btn">Learn More<span>&#8594;</span></a>
+                                        </div>
+                                      </div>
+
+                            
+                          
+                          </div>
+                          <div class="col-md-6 col-lg-4 p-2">
+                          
+
+
+                                <div class="card card-wrapper" style="width: 18rem;">
+                                        <img class="card-img-top" src="src/03.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Service Cases</h5>
+                                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nisi a dui vehicula.</p>
+                                          <a href="#" class="btn">Learn More<span>&#8594;</span></a>
+                                        </div>
+                                      </div>
+                            
+                          </div>
+
+                          <div class="col-md-6 col-lg-4 p-2">
+
+                         
+                            
+                            
+                                <div class=" card card-wrapper" style="width: 18rem;">
+                                        <img class="card-img-top" src="src/04.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Gadget Repair</h5>
+                                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nisi a dui vehicula.</p>
+                                          <a href="#"class="btn">Learn More<span>&#8594;</span></a>
+                                        </div>
+                                      </div>
+                            
+                        
+                          </div>
+                        </div>
+                     
+        </div>
+    </section>
+    <section class="page3">
+
+        <div class="page12">
+
+            <div class="container bg-danger">
+                <div class="row ">
+                    <div class="col-sm-8 p-4">
+                        <h2>Project Challenges</h2>
+                        <P>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus, 
+                        ut posuere neque. Fusce faucibus ex non justo pharetra tempus. Integer quam nibh, 
+                        eleifend sed velit lobortis, dapibus porttitor metus. In suscipit justo ipsum, vel aliquet ipsum cursus et.
+                        <br><br>
+                        Aliquam blandit ipsum non ullamcorper ultricies. Ut tempor dictum cursus. Donec sapien fel
+                        is, fringilla sit amet hendrerit quis, blandit molestie est. Etiam dignissim, dolor in fringilla efficitur, quam nulla maximus ante, auctor condimentum.>
+                        </P>
+                    </div>
+                    <div class="col-sm-4">
+                            <img src="src/04.jpg" class="proch" width="100%" height="260" ">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="s4">
+
+        <div class="con4">
+        <div class="col-lg-5">
+            <h6 style="color:rgb(168, 168, 168)">   OUR FEATURES </h6>
+              <h2>  Explore Our Services</h2>
+        </div>
+
+        <div class="col-lg-7 ourfea">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus,
+                 ut posuere neque. Fusce faucibus ex non justo pharetra tempus. Integer quam nibh molestie eleifend.
+            </div>
+            </div>
+    </section>
+
+    <section >
+        <div class="con5">
+            
+            <div class="moder1 moder">
+                <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M0 24h10V14H0v10zm2-8h6v6H2v-6zm-2-4h10V2H0v10zm2-8h6v6H2V4zm10 20h10V14H12v10zm2-8h6v6h-6v-6zm1.7-8.2L12 5h4.6L18 1l1.4 4H24l-3.7 2.8 1.4 4.2L18 9.4 14.3 12l1.4-4.2z"></path></svg>
+                </span>
+                <div>
+                        <h3>Modernization</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+            
+            <div class="moder2 moder">
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M24 14.8V9.2l-2.9-.7-.2-.5 1.6-2.5-4-4L16 3.1l-.6-.2-.6-2.9H9.2l-.7 2.9-.5.2-2.5-1.6-4 4L3.1 8l-.2.5-2.9.7v5.6l2.9.7.2.5-1.6 2.5 4 4L8 20.9l.6.2.6 2.9h5.6l.7-2.9.6-.2 2.5 1.6 4-4-1.7-2.5.2-.6 2.9-.6zm-4.1 3.4l-1.7 1.7-2-1.3-2.5 1-.5 2.4h-2.4l-.5-2.3-2.5-1-2 1.3-1.7-1.7 1.3-2-1-2.5-2.4-.6v-2.4l2.3-.5 1-2.5-1.3-2 1.7-1.7 2 1.3 2.5-1 .6-2.4h2.4l.5 2.3 2.5 1 2-1.3 1.7 1.7-1.3 2 1 2.5 2.3.5v2.4l-2.3.5-1 2.5 1.3 2.1zM12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"></path></svg></span>
+                <div class="serv">
+                        <h3>Service Cases</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+            <div class="moder3 moder">
+                <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M17.7 6l-1-3H7.3l-1 3H0v15h24V6h-6.3zM22 19H2V8h5.7l1-3h6.6l1 3H22v11zM12 8c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"></path></svg>
+                </span>
+                <div class="Gadget">
+                        <h3>Gadget Repair</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page3">
+
+            <div class="page51">
+           
+    
+               <div class="image"><img src="src/06.jpg" width="100%" height="560"></div>
+                <div class="exper">
+                    <div>
+                        <h3>WHAT WE DO</h3>
+                        <h2>Great Experience<br>
+                        to Repair Everything</h2>
+                     
+                       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Curabitur iaculis rutrum metus, ut posuere neque.
+                             Fusce faucibus ex non justo pharetra tempus.
+                        </p>
+                    </div>
+                        
+                        
+                                <div class="grid-container">
+                                        <div class="item1 items">
+                                                <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M19.7 11.7c.8-.8 1.3-2 1.3-3.2C21 6 19 4 16.5 4S12 6 12 8.5c-.4-.3-.9-.6-1.4-.8.8-.8 1.4-2 1.4-3.2C12 2 10 0 7.5 0S3 2 3 4.5c0 1.3.5 2.4 1.3 3.2C1.8 8.9 0 11.5 0 14.5V20h9v4h15v-5.5c0-3-1.8-5.6-4.3-6.8zM16.5 6C17.9 6 19 7.1 19 8.5S17.9 11 16.5 11 14 9.9 14 8.5 15.1 6 16.5 6zM5 4.5C5 3.1 6.1 2 7.5 2S10 3.1 10 4.5 8.9 7 7.5 7 5 5.9 5 4.5zm-3 10C2 11.5 4.5 9 7.5 9c2.1 0 4.1 1.3 5 3.2-2 1.2-3.3 3.4-3.5 5.8H2v-3.5zM22 22H11v-3.5c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5V22z"></path></svg>
+                                                </span>
+                                                <div>
+                                                        <h3>478</h3>
+                                                        <h6>Happy Customer</h6>
+                                                    </div>
+
+                                        </div>
+                                        <div class="item2 items">
+                                                <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M24 14.8V9.2l-2.9-.7-.2-.5 1.6-2.5-4-4L16 3.1l-.6-.2-.6-2.9H9.2l-.7 2.9-.5.2-2.5-1.6-4 4L3.1 8l-.2.5-2.9.7v5.6l2.9.7.2.5-1.6 2.5 4 4L8 20.9l.6.2.6 2.9h5.6l.7-2.9.6-.2 2.5 1.6 4-4-1.7-2.5.2-.6 2.9-.6zm-4.1 3.4l-1.7 1.7-2-1.3-2.5 1-.5 2.4h-2.4l-.5-2.3-2.5-1-2 1.3-1.7-1.7 1.3-2-1-2.5-2.4-.6v-2.4l2.3-.5 1-2.5-1.3-2 1.7-1.7 2 1.3 2.5-1 .6-2.4h2.4l.5 2.3 2.5 1 2-1.3 1.7 1.7-1.3 2 1 2.5 2.3.5v2.4l-2.3.5-1 2.5 1.3 2.1zM12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"></path></svg>
+                                                </span>
+                                                <div>
+                                                        <h3>1432</h3>
+                                                        <h6>Work Employed</h6>
+                                                    </div>
+                                        </div>
+                                        <div class="item3 items"><span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M24 3v7h-2V6.4l-9 9-3-3L1.4 21 0 19.6l10-10 3 3L20.6 5H17V3h7z"></path></svg>
+                                        </span>
+                                        <div>
+                                                <h3>15</h3>
+                                                <h6>Years Experiance</h6>
+                                            </div></div>  
+                                        <div class="item4 items">
+                                                <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M15 6H5V4h10v2zm0 2H5v2h10V8zm-5 4H5v2h5v-2zm9 2.4V24H1V0h18v7.6L20.6 6 24 9.4l-5 5zm1.6-5.6L12 17.4v.6h.6l8.6-8.6-.6-.6zM17 16.4L13.4 20H10v-3.4l7-7V2H3v20h14v-5.6z"></path></svg>
+                                                </span>
+                                                <div>
+                                                        <h3>547</h3>
+                                                        <h6>Projects Finished</h6>
+                                                    </div>
+                                        </div>
+                                        
+                                      
+                            
+                        </div>
+                    
+                       
+                </div>
+            </div>
+    
+        </section>
+        <section>
+            <div class="con6">
+                <div class="ourteam">
+                    <h5>WORKING WITH EXCELLENT</h5>
+                    <h2>Our Great Team</h2>
+                </div>
+                <div class="teamimg">
+                    <div class="img1 timage">
+                        <div class="img">
+                            <img src="src/face1.jpg"  width="200" height="200"><div class="overlay"></div>
+                        </div>
+                        <div class="team">
+                            <ul>
+                                <li><i style="font-size:24px" class="fa">&#xf09a;</i></li>
+                                <li><i style="font-size:24px" class="fa">&#xf099;</i></li>
+                                <li><i style="font-size:24px" class="fa">&#xf16d;</i></li>
+                                
+                            </ul>
+                            
+                            <h4>Jenifer Gary</h4>
+                            Manger
+                        </div>
+                    </div>
+                    <div class="img2 timage">
+                            
+                                    <div class="img">
+                                        <img src="src/face2.jpg" width="200" height="200"><div class="overlay"></div>
+                                    </div>
+                                    <div class="team">
+                                            <ul>
+                                                    <li><i style="font-size:24px" class="fa">&#xf09a;</i></li>
+                                                    <li><i style="font-size:24px" class="fa">&#xf099;</i></li>
+                                                    <li><i style="font-size:24px" class="fa">&#xf16d;</i></li>
+                                                    
+                                                </ul>
+                                        <h4>Dwayn Royes</h4>
+                                        Repair Master
+                                    </div>
+                    </div>
+                    <div class="img3 timage">
+                            
+                                    <div class="img">
+                                        <img src="src/face3.jpg" width="200" height="200"><div class="overlay"></div>
+                                    </div>
+                                    <div class="team">
+                                            <ul>
+                                                    <li><i style="font-size:24px" class="fa">&#xf09a;</i></li>
+                                                    <li><i style="font-size:24px" class="fa">&#xf099;</i></li>
+                                                    <li><i style="font-size:24px" class="fa">&#xf16d;</i></li>
+                                                    
+                                                </ul>
+                                        <h4>Ann Brown</h4>
+                                        Clients Manger
+                                    </div>
+
+                    </div>
+                    <div class="img4 timage">
+                           
+                                    <div class="img">
+                                        <img src="src/face4.jpg" width="200" height="200"><div class="overlay"></div>
+                                    </div>
+                                    <div class="team">
+                                            <ul>
+                                                    <li><i style="font-size:24px" class="fa">&#xf09a;</i></li>
+                                                    <li><i style="font-size:24px" class="fa">&#xf099;</i></li>
+                                                    <li><i style="font-size:24px" class="fa">&#xf16d;</i></li>
+                                                    
+                                                </ul>
+                                        <h4>Andrew Jonson</h4>
+                                        Repair Master
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page1">
+                <div class="page71">
+                    <div class="play">
+                            <i style="font-size:24px" class="fa">&#xf04b;</i>
+                      
+                              <h2>Trusted By More<br>
+                                Than 650,000 Happy People</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                     Curabitur iaculis rutrum metus, ut posuere neque.
+                                      Fusce faucibus ex non justo pharetra tempus.</p>
+                                    <a href="#" class="btnn">view our project</a>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="con7">
+            <div class="test">
+                    <h5>TESTIMONIALS</h5>
+                    <h2 class="csay">What Our Clients Saying?</h2>
+            </div>
+            <div class="ttest">
+                  <div class="ttest1">
+                      <div class="he">
+                        <img src="src/face2.jpg" width="115" class="heimg">
+                        <div class="name"><h3 style="color:#073b74">John Clarke</h3><h5 style="color:rgb(177, 177, 177)">our client</h5>
+                            </div>
+                    </div>
+                       <div class="cdetails">
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus, ut posuere neque. Fusce faucibus ex non justo pharetra tempus. 
+                                    Integer quam nibh, eleifend sed velit lobortis, dapibus porttitor metus. 
+                                    In suscipit justo ipsum, vel aliquet ipsum cursus et.
+                            </p>
+
+                       </div> 
+                  </div>
+                  <div class="ttest2">
+                        <div class="he">
+                                <img src="src/face1.jpg" width="115" class="heimg">
+                                <div class="name">
+                                <h3 style="color:#073b74">John Clarke</h3><h5 style="color:rgb(177, 177, 177)">our client</h5>
+                                </div>
+                            </div>
+                               <div class="cdetails">
+                                    <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus, ut posuere neque. Fusce faucibus ex non justo pharetra tempus. 
+                                            Integer quam nibh, eleifend sed velit lobortis, dapibus porttitor metus. 
+                                            In suscipit justo ipsum, vel aliquet ipsum cursus et.
+                                    </p>
+        
+                               </div>
+                  </div> 
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="brand">
+                <div class="brand1">
+                    <img src="src/logo1.png" width="50px" style="padding:5px;"><h3 style="position: relative;top:20px;color:#fff;">RepairAMP</h3>
+                </div>
+                <div class="brandcont">
+                    <div class="mbrand">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M0 4v16h24V4H0zm19.8 2L12 10.7 4.2 6h15.6zM2 18V7l10 6 10-6v11H2z"></path></svg>
+                        
+                    </div>
+                    <div class="mbrand"><h3>Subscribe To Our Newsletter</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p></div>
+               </div>
+                <div class="mail">
+                    <input type="text" class="email" placeholder="Enter your name" style="padding: 10px;"><span style="padding:7px;font-size:1.3rem;color:#fff;border: 1px solid"> <i class="fa">&#xf0e0;</i> </span>
+                    </div>
+                
+            </div>
+        </section>
+        <section><div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=350%205th%20avenue,new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/maps/73"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div></section>
+   
+        <section>
+            <div class="con8">
+                <div class="gtouch">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0C7 0 3 4 3 9c0 7.4 8.1 14.3 8.4 14.5l.6.5.6-.5c.3-.2 8.4-7.1 8.4-14.5 0-5-4-9-9-9zm0 21.5C10.2 19.9 5 14.3 5 9c0-3.9 3.1-7 7-7s7 3.1 7 7c0 5.3-5.2 10.9-7 12.5zM12 5C9.8 5 8 6.8 8 9s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg>
+                        </span>234 street, New york, USA</li>
+                        <li><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M0 4v16h24V4H0zm19.8 2L12 10.7 4.2 6h15.6zM2 18V7l10 6 10-6v11H2z"></path></svg>
+                        </span>name@gmail.com</li>
+                        <li><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.9 24l-.7-.4C14.4 21.5 11 19.1 7.9 16 4.9 13 2.4 9.6.4 5.8L0 5.1 5.1 0l6.2 6.2-2 2.9 5.5 5.5 2.9-2 6.2 6.2-5 5.2zm-9.6-9.3c2.8 2.7 5.8 5 9.2 6.9l2.7-2.7-3.6-3.6-2.9 2-7.9-7.9 2-2.9-3.7-3.7-2.6 2.7c1.9 3.4 4.1 6.4 6.8 9.2z"></path></svg>
+                        </span>
+                                Phone: +9(635) 234 694<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support: +9(521) 835 739
+                        </li>
+                    </ul>
+                </div>
+                <div class="ulink">
+                    <h3>Useful link</h3>
+                    <div class="ulinks">
+                    <div class="ulink1">
+                        <ul>
+                            <li>✓<a href="#">Home</a></li>
+                            <li>✓<a href="#">Service</a></li>
+                            <li>✓<a href="#">About</a></li>
+                            <li>✓<a href="#">Features</a></li>
+                            <li>✓<a href="#">Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="ulink2">
+                        <ul>
+                            <li>✓<a href="#">Help</a></li>
+                            <li>✓<a href="#">Info</a></li>
+                            <li>✓<a href="#">Contacts</a></li>
+                            <li>✓<a href="#">Service</a></li>
+                            <li>✓<a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="revent">
+                    <h3>Recent Event</h3>
+                        <div class="re">
+                            <div class="reimg"> <img src="src/06.jpg" width="60" height="70"> </div>
+                            <div class="recon">
+                                <h3>Everything Repair Master Class</h3>
+                                        <h3>December 12, 2020</h3>
+                            </div>
+                        </div>
+                        <div class="re">
+                                <div class="reimg"> <img src="src/04.jpg" width="60" height="70"> </div>
+                                <div class="recon">
+                                    <h3>Best Repair Guides of the year</h3>
+                                            <h3>December 12, 2020</h3>
+                                </div>
+                        </div>
+                </div>
+                <div class="gest">
+                    <h3>Get Free Estimate</h3>
+                    <h2 style="color:#fc6a20">123-456-78910</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur molestie elit. Praesent consectetur.</p>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+       function openNav() {
+  document.getElementById("menu2").style.display = "block";
+  document.getElementById("dogglebar").style.display= "none";
+  document.getElementById("dogglebar1").style.display= "block";
+
+
+}
+function closeNav() {
+    
+    document.getElementById("menu2").style.display = "none";
+  document.getElementById("dogglebar").style.display= "block";
+  document.getElementById("dogglebar1").style.display= "none";
+    
+}
+    </script>
+   
 </body>
-</html>
